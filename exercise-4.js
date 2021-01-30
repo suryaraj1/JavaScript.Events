@@ -1,8 +1,6 @@
 const input = document.querySelector(".input-text");
 const count = document.querySelector("span");
-let characterCount = 0;
 
-input.addEventListener('keydown', () => {
-    characterCount++;
-    count.innerHTML = characterCount;
+input.addEventListener('input', () => {
+    count.innerText = input.value.length;
 })
